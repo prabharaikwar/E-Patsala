@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from '../src/Components/Nav';
+import Carousel from '../src/Components/Carousel';
+import Cards from '../src/Components/Cards';
+import ExploreSection from '../src/Components/ExploreSection';
+import ReadyToJoin from '../src/Components/ReadyToJoin';
+import SuccessfulStudent from '../src/Components/SuccessfulStudent';
+import FeedbackStudent from '../src/Components/FeedbackStudent';
+import QuestionAccordian from '../src/Components/QuestionAccordian';
+import TrustedCompanies from '../src/Components/TrustedCompanies';
+import Footer from '../src/Components/Footer';
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="">
+      <Nav/>
+      <Carousel/>
+      <Cards/>
+      <ExploreSection/>
+      <ReadyToJoin/>
+      <SuccessfulStudent/>
+      <FeedbackStudent/>
+      <QuestionAccordian/>
+      <TrustedCompanies/>
+      <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 
